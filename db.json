@@ -32,6 +32,17 @@
       "roomlist": "platinum",
       "roomtype": "single bedroom",
       "lunchtime": "breakfast"
+    },
+    {
+      "id": "4fba",
+      "name": "hitesh",
+      "mobile": "4567893210",
+      "address": "surat",
+      "arrival": "2024-05-04",
+      "checkout": "2024-05-10",
+      "roomlist": "prime",
+      "roomtype": "single bedroom",
+      "lunchtime": "breakfast and lunch"
     }
   ]
 }

@@ -2,6 +2,12 @@ import React from 'react'
 import { navdata } from './navdata'
 import { Link } from 'react-router-dom'
 const Navbar = () => {
+
+    const loginout = () =>{
+        window.location.reload();
+        localStorage.clear();
+        window.location.href ="/";
+    }
     return (
         <>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -21,6 +27,7 @@ const Navbar = () => {
                                     )
                                 })
                             }
+                            <li class="nav-link" onClick={loginout}>login out</li>
                         </ul>
                     </div>
                 </div>

@@ -22,7 +22,7 @@ const Adminlogin = () => {
     return (
         <>
             <div class="mx-auto m-5" style={{ width: "400px" }}>
-            <h1>ADMIN LOGIN</h1>
+            <h1>LOGIN</h1>
                 <label>Name  </label>
                 <input type="text" placeholder='Enter admin Name' ref={name} /><br />
                 <label>passowrd </label>

@@ -24,6 +24,13 @@ const Reservationlist = () => {
     dispatch({ type: UPDATA_ROOM_PENDING, payload: updata });
     console.log(updata, 'sumbit update');
   }
+
+  //sorting
+  const [sort, setSort] = useState('name');
+  const sortedname = reservationlist.sort((a,b) =>{
+    if(sort === 'name') return a.name > b.name ? 1 : -1;
+  })
+  const sortednamedata = sortedname.filter(value => value.name);
   return (
     <>
       <table cellpadding="10px" className="col-12 text-center table-bordered uppercase border-secondary">
@@ -44,7 +51,7 @@ const Reservationlist = () => {
         </thead>
         <tbody>
           {
-            reservationlist.map((value, index) => {
+            sortednamedata.map((value, index) => {
               return (
                 <tr>
                   <td>{index + 1}</td>
